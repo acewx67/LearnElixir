@@ -3,8 +3,9 @@ defmodule Tutorials.Recursion.Concat do
   # def concat([h|[]],list2), do: [h | list2]
   # def concat([h | t], list2) do
   #   [h|concat(t,list2)]
-  #
-  def concat([],list2), do: list2
+  # end
+
+  def concat([],list2), do: list2 
   def concat([h | t],list2) do
     concat(t,[h|list2])
   end
